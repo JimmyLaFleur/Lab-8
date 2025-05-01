@@ -1,10 +1,12 @@
 import cv2
 import time
+import os
 from PIL import Image
 
 #Task 1
 
-image_path = r"C:\Users\osnov\Downloads\variant-8.jpg"
+base_dir = os.path.dirname(__file__)
+image_path = os.path.join(base_dir, "variant-8.jpg")
 image = Image.open(image_path)
 width, height = image.size
 
